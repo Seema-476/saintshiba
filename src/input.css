@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    scroll-behavior: smooth;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.menulist.show {
+    right: 0;
+}
+
+.bg-img {
+    background-image: url(../dist/images/bgimage.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+h2.accordianHeading:has(~[aria-labelledby].hidden) {
+    margin-bottom: 20px !important;
+}
+
+h2.accordianHeading {
+    margin-bottom: 0 !important;
+}
